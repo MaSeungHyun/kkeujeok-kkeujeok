@@ -1,14 +1,11 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import "@kkeujeok-kkeujeok/tailwind-config/variables.css";
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+@source "./**/*.ts";
+@source "./**/*.tsx";
+@source "../../../packages/ui/src/**/*.ts";
+@source "../../../packages/ui/src/**/*.tsx";
+
+@import "tailwindcss";
 
 html,
 body {
@@ -23,9 +20,8 @@ body {
 
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
+
 
 a {
   color: inherit;
